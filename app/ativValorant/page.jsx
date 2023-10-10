@@ -8,7 +8,7 @@ function valorantizar() {
         try{
             const datas = await valorant();
             setDados(datas);
-            console.log(datas);
+            console.log(dados);
           }catch(e){
             throw e
           }
@@ -17,9 +17,13 @@ function valorantizar() {
     })
   return (
     <div>
+        <h1>API Data</h1>
         {
-           data.map() => (
-
+           dados ?(
+           <p>funcionando</p>
+               
+           ) : (
+                <p>carregando...</p>
            )
         }
     </div>
